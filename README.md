@@ -14,6 +14,7 @@ HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side render
 
 ## Features
 
+- Express 4.x
 - Server Side Rendering
   - Vue + vue-router + vuex working together
   - Server-side data pre-fetching
@@ -22,6 +23,14 @@ HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side render
   - Hot-reload in development
   - CSS extraction for production
 - Real-time List Updates with FLIP Animation
+
+## WIP: Koa 2 
+
+[Koa 2](koajs.com) support:
+
+`npm run koa-dev`
+
+See `koa-server.js` 
 
 ## Architecture Overview
 
