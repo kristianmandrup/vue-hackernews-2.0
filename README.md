@@ -26,11 +26,25 @@ HackerNews clone built with Vue 2.0 + vue-router + vuex, with server-side render
 
 ## WIP: Koa 2 
 
+*Work in Progress* Please help out!
+
+Requires Node 7+ (or using Babel with `async/await` transform plugin - see `.babelrc`)
+
 [Koa 2](koajs.com) support:
 
 `npm run koa-dev`
 
 See `koa-server.js` 
+
+*Issues*
+
+Mainly in renderer and `build/setup-dev-server.js`
+
+The webpack middleware modules: `webpack-dev-middleware` and `webpack-hot-middleware` are made for 
+express and need to be converted for use with Koa2 using `koa-convert` or similar!?
+
+Currently experimenting with async/await for better async handling 
+(ie. waiting for file system when reading bundle updates in dev mode).
 
 ## Architecture Overview
 

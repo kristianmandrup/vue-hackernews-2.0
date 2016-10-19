@@ -30,10 +30,9 @@ function devRenderer(app) {
   const setup = require('../build/setup-dev-server');
 
   // TODO: somehow await/async here!
-  return setup(app, bundle => {
-    console.log('create renderer');
-    return createRenderer(bundle)
-  })  
+  let bundle = await setup(app);
+  console.log('create renderer');
+  return createRenderer(bundle)  
 }
 
 
